@@ -1,0 +1,113 @@
+/* INTRO SECTION */
+.intro-content {
+    position: relative; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    gap: var(--gap); 
+    min-height: calc(100vh - var(--menu-height)); 
+    padding-top: 0; 
+    padding-bottom: 0; 
+}
+
+.intro-text-content {
+    flex: 1; 
+    max-width: 60rem; 
+}
+
+.intro-img {
+    flex: 1; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-img img { 
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    
+}
+
+/* Responsividade (Essencial para um bom layout) */
+@media (max-width: 768px) {
+    /* Ajustes para títulos em telas menores */
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    /* Menu responsivo */
+    .menu-content {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu ul li {
+        margin: 0.5rem 0;
+    }
+    .menu ul li a {
+        padding: 1rem;
+    }
+
+    /* Intro Section responsiva */
+    .intro-content {
+        flex-direction: column; 
+        text-align: center; 
+        padding-top: calc(var(--menu-height) + 2rem); 
+        min-height: auto; 
+    }
+    .intro-text-content {
+        max-width: 100%; 
+        margin-bottom: var(--gap); 
+    }
+    .intro-img {
+        max-width: 80%; 
+        margin: 0 auto; 
+    }
+    .intro-img img {
+        max-width: 100%; 
+    }
+
+    /* Features Grid responsiva */
+    .features-grid {
+        grid-template-columns: 2fr; 
+    }
+    .feature-item {
+        padding: 2.5rem; 
+        
+    }
+
+    /* Project Grid responsiva */
+    .project-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes menores para telas muito pequenas */
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.8rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .cta-button {
+        font-size: 1.8rem;
+        padding: 1.2rem 2.5rem;
+    }
+    .main-content {
+        padding: 5rem var(--gap); 
+    }
+}
