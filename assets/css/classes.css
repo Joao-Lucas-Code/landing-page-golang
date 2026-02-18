@@ -233,3 +233,36 @@
     transform: translateY(-5px);
     background-color: #0056b3; /* Cor mais escura para o hover, substitui darken() */
 }
+
+/* Modificações específicas para um ar premium */
+
+.feature-item {
+    background-color: var(--light-bg-color);
+    padding: 3.5rem;
+    border-radius: 16px; /* Bordas mais arredondadas são tendência */
+    text-align: left;    /* Texto à esquerda passa mais seriedade que centralizado */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 1.2rem 3rem;
+    border-radius: 8px;
+    font-size: 1.6rem; /* Menos exagerado, mais equilibrado */
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 14px 0 rgba(0, 173, 216, 0.39);
+}
+
+.project-item {
+    background-color: var(--light-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden; /* Para imagens dentro do card */
+}
