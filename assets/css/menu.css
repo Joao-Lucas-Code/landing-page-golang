@@ -1,14 +1,64 @@
 .menu {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000; 
-    background-color: rgba(13, 17, 23, 0.8); 
-    backdrop-filter: blur(10px); /* Efeito de vidro fosco */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    background-color: rgba(13, 17, 23, 0.85); /* Fundo escuro translúcido */
+    backdrop-filter: blur(12px); /* Efeito de vidro */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08); 
+    height: var(--menu-height); /* Usa a altura definida nas variáveis */
+    display: flex;
+    align-items: center;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: var(--main-content-max-width);
+    margin: 0 auto;
+    padding: 0 2rem; /* Espaçamento interno nas laterais */
+}
+
+.logo {
+    font-size: 2.2rem; 
+    font-weight: 900; 
+    text-transform: uppercase;
+    letter-spacing: -1px;
 }
 
 .logo a {
-    color: var(--accent-color) !important;
-    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* Espaço entre os links */
+    align-items: center;
+}
+
+.menu ul li a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secondary-color); 
+    padding: 0.8rem 1.2rem;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.menu ul li a:hover {
+    color: var(--accent-color); 
+    opacity: 1;
+}
+
+/* Esconde o menu spacing em telas grandes se o menu for fixo e não ocupar espaço real */
+.menu-spacing {
+    height: var(--menu-height);
 }

@@ -3,9 +3,11 @@
 <head>
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Landing Page</title>
+    <title>Golang Masterclass | Aprenda de forma prática</title>
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/elements.css">
     <link rel="stylesheet" href="assets/css/classes.css">
@@ -14,16 +16,15 @@
 </head>
 
 <body class="main-bg">
-    <aside class="menu white-bg">
+    <aside class="menu">
         <div class="main-content menu-content">
-            <div class="logo"><a href="#">Golang</a></div> 
+            <div class="logo"><a href="#">Golang<span>_</span></a></div> 
 
             <nav>
                 <ul>
-                    <li><a href="#intro">Intro</a></li>
-                    <li><a href="#conceitos">Conceitos</a></li>
+                    <li><a href="#intro">Início</a></li>
+                    <li><a href="#conceitos">Por que Go?</a></li>
                     <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#recursos">Recursos</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
@@ -32,35 +33,41 @@
 
     <div class="menu-spacing"></div>
 
-    <section id="intro" class="intro main-bg section">
+    <section id="intro" class="section">
         <div class="main-content intro-content">
             <div class="intro-text-content">
-                <h1>Aprenda Golang de Forma Rápida e Prática</h1>
-                <p>Descubra o poder da concorrência e a simplicidade de Go para construir softwares robustos e eficientes.</p>
-                <button class="cta-button">Comece Agora!</button>
+                <h1>Aprenda Golang de forma <span class="highlight">Estratégica.</span></h1>
+                <p>Domine a linguagem do Google. Construa sistemas escaláveis, concorrentes e de alta performance com uma metodologia focada em resultados reais.</p>
+                <div class="cta-wrapper">
+                    <a href="#conceitos" class="cta-button">Começar Agora</a>
+                </div>
             </div>
             <div class="intro-img">
-                <img src="assets/img/go-image.svg" alt="Marmota da Go">
+                <img src="assets/img/go-image.svg" alt="Gopher Golang Mascot">
             </div>
         </div>
     </section>
 
     <section id="conceitos" class="white-bg section">
         <div class="main-content">
-            <h2 class="section-title">Por Que Aprender Golang Agora?</h2>
-            <p class="section-description">Go é a linguagem do futuro para microserviços, APIs e aplicações de alta performance. Entenda os benefícios:</p>
+            <h2 class="section-title">Alta Performance de Ponta a Ponta</h2>
+            <p class="section-description">Go não é apenas uma linguagem, é a escolha das empresas que lideram a infraestrutura da internet moderna.</p>
             
-            <div class="features-grid"> <div class="feature-item">
-                    <h3>1. Performance e Eficiência</h3>
-                    <p>Go compila para código nativo, oferecendo velocidades impressionantes e baixo consumo de recursos.</p>
+            <div class="features-grid"> 
+                <div class="feature-item">
+                    <div class="icon-placeholder">⚡</div>
+                    <h3>Performance</h3>
+                    <p>Compilação para código nativo com execução em velocidade comparável a C++ e Java.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>2. Simplicidade e Produtividade</h3>
-                    <p>Com uma sintaxe limpa e clara, Go é fácil de aprender e permite que você escreva código robusto rapidamente.</p>
+                    <div class="icon-placeholder">🛠️</div>
+                    <h3>Simplicidade</h3>
+                    <p>Sintaxe minimalista que reduz a carga cognitiva e acelera a manutenção de grandes projetos.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>3. Concorrência Integrada</h3>
-                    <p>As Goroutines e Channels facilitam a escrita de código concorrente e escalável de forma elegante.</p>
+                    <div class="icon-placeholder">🌐</div>
+                    <h3>Concorrência</h3>
+                    <p>Goroutines leves que permitem processar milhares de requisições simultâneas com pouco consumo de memória.</p>
                 </div>
             </div>
         </div>
@@ -68,67 +75,72 @@
 
     <section id="projetos" class="section dark-bg">
         <div class="main-content">
-            <h2 class="section-title">Projetos Práticos em Go</h2>
-            <p class="section-description">Aqui estão alguns projetos que você pode construir ou se inspirar.</p>
-            <div class="project-grid">
-                <div class="project-item">
-                    <img src="assets/img/api.svg" alt="Ícone de API" class="project-icon"> 
-                    <h3>API RESTful Simples</h3>
-                    <p>Crie e consuma dados com Go.</p>
-                </div>
-                <div class="project-item">
-                    <img src="assets/img/cli.svg" alt="Ícone de CLI" class="project-icon">
-                    <h3>Ferramenta CLI com Go</h3>
-                    <p>Construa utilitários de linha de comando.</p>
-                </div>
-                <div class="project-item">
-                    <img src="assets/img/scraping.svg" alt="Ícone de Web Scraper" class="project-icon">
-                    <h3>Web Scraper Concorrente</h3>
-                    <p>Coleta dados da web de forma eficiente.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="recursos" class="section dark-bg"> 
-        <div class="main-content">
-            <h2 class="section-title">Recursos e Contato</h2>
-            <p class="section-description">Encontre a documentação oficial, cursos e entre em contato.</p>
+            <h2 class="section-title">O Que Você Vai Construir</h2>
+            <p class="section-description">Projetos práticos para o seu portfólio de engenharia de software.</p>
             
-            <div class="contact-form">
-                <fieldset class="form-grid">
-                    <legend>Entre em Contato</legend>
-
-                    <div class="form-group">
-                        <label for="first-name">Nome</label>
-                        <input type="text" name="first-name" id="first-name" placeholder="Seu nome completo">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="Seu e-mail">
-                    </div>
-
-                    <div class="form-group full-width">
-                        <label for="message">Mensagem</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
-                    </div>
-
-                    <div class="form-group full-width">
-                        <button type="submit" class="cta-button">Enviar Mensagem</button>
-                    </div>
-                </fieldset>
+            <div class="project-grid">
+                <article class="project-item">
+                    <img src="assets/img/api.svg" alt="API Icon" class="project-icon"> 
+                    <h3>API RESTful</h3>
+                    <p>Implementação de microserviços com persistência de dados e autenticação JWT.</p>
+                </article>
+                
+                <article class="project-item">
+                    <img src="assets/img/cli.svg" alt="CLI Icon" class="project-icon">
+                    <h3>Ferramenta CLI</h3>
+                    <p>Desenvolvimento de utilitários de terminal otimizados para automação de tarefas.</p>
+                </article>
+                
+                <article class="project-item">
+                    <img src="assets/img/scraping.svg" alt="Scraper Icon" class="project-icon">
+                    <h3>Web Scraper</h3>
+                    <p>Coleta massiva de dados utilizando múltiplos canais de concorrência em tempo real.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <footer id="footer" class="footer dark-bg"> <div class="main-content">
-            <p>&copy; 2025 Desenvolvido por João Lucas Gomes. Todos os direitos reservados.</p>
+    <section id="contato" class="section"> 
+        <div class="main-content">
+            <div class="contact-form-container">
+                <h2 class="section-title">Ficou com alguma dúvida?</h2>
+                <div class="contact-form">
+                    <form action="#">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="first-name">Nome</label>
+                                <input type="text" id="first-name" placeholder="Como podemos te chamar?">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-mail Corporativo</label>
+                                <input type="email" id="email" placeholder="nome@empresa.com">
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" rows="5" placeholder="Conte-nos sobre seu desafio ou objetivo com Go"></textarea>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <button type="submit" class="cta-button">Enviar Solicitação</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer dark-bg"> 
+        <div class="main-content">
+            <div class="footer-content">
+                <p>&copy; 2026 Desenvolvido por João Lucas Gomes. Código aberto e otimizado.</p>
+            </div>
         </div>
     </footer>
 
-    <a class="back-to-top" href="#intro">➤</a> </body>
-</html>
+    <a class="back-to-top" href="#intro" aria-label="Voltar ao topo">↑</a> 
 
 </body>
 </html>
