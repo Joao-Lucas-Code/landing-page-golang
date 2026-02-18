@@ -66,30 +66,39 @@
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--gap);
-    margin-top: 3rem;
+    /* Mudamos de 300px para 350px no mínimo para forçar cards maiores */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 4rem; /* Aumentamos o espaço entre os cards */
+    margin-top: 5rem;
 }
 
 .feature-item {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 4rem;
-    border-radius: 11px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: var(--secondary-color);
+    background-color: var(--light-bg-color);
+    /* Aumentamos o padding de 3.5rem para 5rem */
+    padding: 5rem 4rem; 
+    border-radius: 20px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Espaço entre ícone, título e texto */
 }
 
+/* Aumentando os textos dentro do card */
 .feature-item h3 {
-    font-size: 3.5rem;
-    color: var(--accent-color);
-    margin-bottom: 1.5rem;
+    font-size: 3.2rem; /* Título do card maior */
+    margin-bottom: 0;
 }
 
 .feature-item p {
-    font-size: 1.6rem;
-    color: var(--secondary-color);
+    font-size: 1.8rem; /* Texto descritivo mais legível */
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.icon-placeholder {
+    font-size: 4rem; /* Ícone (emoji) maior */
 }
 
 .project-grid {
